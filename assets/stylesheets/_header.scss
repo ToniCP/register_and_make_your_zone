@@ -1,0 +1,144 @@
+.header-container {
+  color: white;
+  padding: 10px;
+
+  @media screen and (min-width: 376px) {
+    padding: 5px 130px;
+  }
+
+  .text-form {
+    p {
+      margin: 0;
+    }
+
+    .send {
+      p {
+        border: white 1px solid;
+        float: right;
+        padding: 5px 10px;
+        margin-top: 0;
+        cursor: pointer;
+      }
+
+      p:not(:last-child) {
+        border-left: none;
+      }
+    }
+
+    .send:after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    h2 {
+      width: 365px;
+      color: white;
+      font-size: 22px;
+      margin-top: 60px;
+
+      @media screen and (min-width: 376px) {
+        width: auto;
+        font-size: 40px;
+        margin-top: 138px;
+      }
+    }
+
+    .browser {
+      @media screen and (min-width: 376px) {
+        display: inline-block;
+      }
+
+      p {
+        float: left;
+
+        label {
+          @media screen and (max-width: 375px) {
+            height: 0;
+            overflow: hidden;
+            position: absolute;
+          }
+
+          @media screen and (min-width: 376px) {
+            display: inline-block;
+            padding: 15px;
+            font-size: 25px;
+            color: #818181;
+            background: white;
+            border: 1px solid grey;
+          }
+        }
+
+        select{
+          @media screen and (max-width: 375px) {
+            height: 0;
+            overflow: hidden;
+            position: absolute;
+            visibility:hidden
+          }
+
+          @media screen and (min-width: 376px) {
+            display: inline-block;
+            padding: 15px;
+            font-size: 25px;
+            color: #818181;
+            background: white;
+            border: 1px solid grey;
+            width: 180px;
+          }
+        }
+
+        input[type=text] {
+          padding: 10px;
+          font-size: 17px;
+          border: 1px solid grey;
+          width: 285px;
+          background: white;
+
+          @media screen and (min-width: 376px) {
+            width: 550px;
+            padding: 15px;
+            font-size: 25px;
+          }
+        }
+
+        button[type=submit] {
+          width: 48px;
+          background: #2196F3;
+          color: white;
+          padding: 10px;
+          font-size: 17px;
+          border: 1px solid grey;
+          cursor: pointer;
+
+          @media screen and (min-width: 376px) {
+            padding: 15px;
+            font-size: 25px;
+            width: 62px;
+          }
+        }
+
+        button:hover {
+          background: #0b7dda;
+        }
+      }
+    }
+
+    .browser:after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .terms-and-conditions {
+      text-decoration: underline;
+      color: white;
+      font-size: 18px;
+      margin-top: 20px;
+
+      @media screen and (min-width: 376px) {
+        font-size: 30px;
+      }
+    }
+  }
+}

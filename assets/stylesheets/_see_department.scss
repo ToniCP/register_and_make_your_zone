@@ -1,0 +1,27 @@
+header {
+  background-image: url(../../assets/images/department-background-image.jpg);
+  height: 325px;
+  width: 375px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+
+  @media screen and (min-width: 376px) {
+    height: 600px;
+    width: auto;
+  }
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+@import "header";
+.container {
+  @import "main";
+}
+@import "footer";

@@ -1,0 +1,76 @@
+%margin-bottom-text {
+  margin-bottom: 15px;
+  padding: 0 20px;
+}
+
+.fooder-container {
+  background-color: #f3f3f3;
+  padding-top: 30px;
+
+  img {
+    height: 132px;
+    width: 252px;
+    margin-top: 20px;
+    margin-bottom: -5px;
+
+    @media screen and (min-width: 376px) {
+      height: 700px;
+      width: 1100px;
+    }
+  }
+
+  p {
+    display: block;
+    margin: 0;
+  }
+
+  p:empty {
+    width: 375px;
+    height: 45px;
+    background: black;
+
+    @media screen and (min-width: 376px) {
+      width: auto;
+      height: 100px;
+    }
+  }
+
+  .take-your-zones {
+    font-size: 23px;
+    font-weight: bolder;
+    @extend %margin-bottom-text;
+
+    @media screen and (min-width: 376px) {
+      font-size: 35px;
+    }
+  }
+
+  .our-application {
+    font-size: 20px;
+    font-weight: lighter;
+    color: #8f8f8f;
+    @extend %margin-bottom-text;
+
+    @media screen and (min-width: 376px) {
+      font-size: 30px;
+      width: 700px;
+      margin-left: 380px;
+    }
+  }
+
+  button {
+    width: 330px;
+    height: 45px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+
+    @media screen and (min-width: 376px) {
+      height: 55px;
+      width: 500px;
+    }
+  }
+}

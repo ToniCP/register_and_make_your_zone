@@ -1,0 +1,44 @@
+.main-container {
+  margin-top: 145px;
+
+  img {
+    height: 250px;
+    width: 250px;
+    padding-top: 20px;
+  }
+
+  .find-new-home {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: -86px;
+
+    @media screen and (min-width: 376px) {
+      font-size: 30px;
+    }
+  }
+
+  .department-options {
+    .form-text-images-title {
+      font-size: 20px;
+      font-weight: bolder;
+      margin-top: -3px;
+    }
+
+    .form-text-images-description {
+      font-size: 13px;
+      font-weight: lighter;
+      margin-top: -18px;
+      width: 358px;
+    }
+
+    p:last-child {
+      padding-bottom: 25px;
+    }
+
+    @media screen and (min-width: 376px) {
+      display: inline-block;
+      padding: 0 20px;
+    }
+  }
+
+}
